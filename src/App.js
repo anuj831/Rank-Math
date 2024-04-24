@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar'
+import Box1 from './components/Box1'
+import Box2 from './components/Box2';
+import Box3 from './components/Box3';
+import Icons from './components/Icons';
 import './App.css';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar toggleMenu={toggleMenu} menuOpen={menuOpen}/>
+
+       <div style={{ backgroundColor: 'rgb(244, 246, 246)' }}>
+        <br />
+      <Box1/>
+      <Box2/>
+      <Box3/>
+      <Icons/>
+      </div> 
+
+    </>
   );
 }
 
