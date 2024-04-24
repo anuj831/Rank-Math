@@ -1,0 +1,261 @@
+*{
+    background-color: white;
+}
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 50px; 
+    width: 100%;
+}
+
+.left-icon,
+.right-icon {
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+.right-icon {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    display: none; 
+}
+
+.header:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-menu div {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu div:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu hr {
+    margin: 4px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+.icon {
+    float: right;
+    margin-left: 5px; 
+  }
+  
+
+
+ 
+  .Box1 {
+    background-color: white;
+    margin: 30px 50px; 
+    height: 300px;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px; 
+}
+
+.Box2 {
+    background-color: white;
+    margin: 25px 50px; 
+    height: 400px;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    width: calc(100% - 100px); 
+}
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px; 
+    background-color: white;
+  }
+  
+  .red-dot {
+    background-color: red;
+    margin-left: 25px;
+  }
+  .blue-dot {
+    background-color: orangered;
+    margin-left: 25px;
+  }
+  
+.green-dot {
+    background-color: green;
+    margin-left: auto; 
+  
+}
+
+
+.bitcoin-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.bitcoin-icon {
+    font-size: 24px; 
+    
+
+}
+
+.bitcoin-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto; 
+}
+
+.bitcoin-text span:first-child {
+    font-weight: bold;
+}
+
+.bitcoin-text span:last-child {
+    font-size: 14px; 
+    color: gray; 
+}
+
+.BTC-text {
+    margin-left: auto; 
+}
+
+.calendar-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .calendar-button:hover {
+    background-color: #d9d9d9;
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 100%; 
+  }
+  
+
+  .chart-container > div {
+    max-width: 100%; 
+  }
+  
+
+
+
+  .main-box {
+    background-color: rgb(244, 246, 246);
+    margin: 30px auto; 
+    height: 300px;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px; 
+    width: calc(100% - 100px); 
+  }
+  
+  
+  .box-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(244, 246, 246);
+  }
+  
+  .box {
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding-left: 60px; 
+    padding-right: 60px;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+  
+  .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-box {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text {
+    padding: 10px;
+  }
+  
+  .blue {
+    background-color: rgb(34, 147, 216);
+    color: white;
+  }
+  
+  .red {
+    background-color: rgb(224, 60, 60);
+    color: white;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-box {
+      height: auto;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .box {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  }
+  
+  
+
+  
+  
+
+  
+
+
+  .icons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+  }
+  
+  .icons {
+    font-size: 32px; 
+    color: grey; 
+    margin-top: 30px; 
+  }
+  
+  
